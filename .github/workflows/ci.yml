@@ -10,13 +10,14 @@ jobs:
       # 切换分支
       - name: Checkout
         uses: actions/checkout@master
-      # npm install
-      - name: yarn install and build
+      # yarn install
+      - name: yarn install
         run: |
           yarn
-          gatsby build
         env:
           CI: true
+      - name: gatsby build
+        uses: jzweifel/gatsby-cli-github-action@master
       # Deploy
       - name: Deploy tencent
         uses: easingthemes/ssh-deploy@v2.0.9
