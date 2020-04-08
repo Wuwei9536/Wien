@@ -4,18 +4,53 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styles from "./index.module.css"
+import "./index.css"
 
 const IndexPage = () => (
-  <Layout>
+  <div className={styles.layout}>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Image style={{ height: "100px", width: "100px", borderRadius: "50%" }} />
+    <h1>A Front-end Development Engineer</h1>
+    <div class="container">
+      <div class="card">
+        <div class="imgBx">
+          <img
+            src="https://image.flaticon.com/icons/svg/2092/2092063.svg"
+            alt=""
+          />
+        </div>
+        <div class="contentBx">
+          <h2>Blog</h2>
+          <p>Just Test.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img
+            src="https://image.flaticon.com/icons/svg/1197/1197460.svg"
+            alt=""
+          />
+        </div>
+        <div class="contentBx">
+          <h2>Code</h2>
+          <p>Just Test.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img
+            src="https://image.flaticon.com/icons/svg/1067/1067256.svg"
+            alt=""
+          />
+        </div>
+        <div class="contentBx">
+          <h2>Launch</h2>
+          <p>Just Test.</p>
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </div>
 )
 
 export default IndexPage
