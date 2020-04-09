@@ -13,18 +13,20 @@ const IndexPage = () => (
     <Image style={{ height: "100px", width: "100px", borderRadius: "50%" }} />
     <h1>A Front-end Development Engineer</h1>
     <div className="container">
-      <div className="card">
-        <div className="imgBx">
-          <img
-            src="https://image.flaticon.com/icons/svg/2092/2092063.svg"
-            alt=""
-          />
+      <Link to="/blog">
+        <div className="card">
+          <div className="imgBx">
+            <img
+              src="https://image.flaticon.com/icons/svg/2092/2092063.svg"
+              alt=""
+            />
+          </div>
+          <div className="contentBx">
+            <h2>Blog</h2>
+            <p>Just Test.</p>
+          </div>
         </div>
-        <div className="contentBx">
-          <h2>Blog</h2>
-          <p>Just Test.</p>
-        </div>
-      </div>
+      </Link>
       <div className="card">
         <div className="imgBx">
           <img
