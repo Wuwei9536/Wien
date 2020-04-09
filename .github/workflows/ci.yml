@@ -10,12 +10,7 @@ jobs:
       # 切换分支
       - name: Checkout
         uses: actions/checkout@master
-      # yarn install
-      - name: yarn install
-        run: |
-          yarn
-        env:
-          CI: true
+      # 此action会帮助你执行yarn
       - name: gatsby build
         uses: jzweifel/gatsby-cli-github-action@master
       # Deploy
