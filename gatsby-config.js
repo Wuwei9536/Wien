@@ -3,6 +3,8 @@ module.exports = {
     title: `Wien`,
     description: `.`,
     author: `@Wien`,
+    avatar:
+      "https://tvax1.sinaimg.cn/crop.0.10.492.492.180/006aapNWly8fgdzcgxilmj30do0e8dgq.jpg?KID=imgbed,tva&Expires=1586453691&ssig=ETKA%2B3DdY7",
     social: [
       {
         name: `Twitter`,
@@ -16,6 +18,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-less`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,8 +29,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -108,7 +112,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-theme-blog`,
       options: {
