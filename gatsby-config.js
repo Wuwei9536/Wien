@@ -7,12 +7,12 @@ module.exports = {
       "https://tvax1.sinaimg.cn/crop.0.10.492.492.180/006aapNWly8fgdzcgxilmj30do0e8dgq.jpg?KID=imgbed,tva&Expires=1586453691&ssig=ETKA%2B3DdY7",
     social: [
       {
-        name: `Twitter`,
-        url: `https://twitter.com/gatsbyjs`,
+        name: `Weibo`,
+        url: `https://weibo.com/u/5647042828`,
       },
       {
         name: `GitHub`,
-        url: `https://github.com/gatsbyjs`,
+        url: `https://github.com/Wuwei9536`,
       },
     ],
   },
