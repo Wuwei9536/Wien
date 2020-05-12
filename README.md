@@ -8,6 +8,13 @@
   Wien's Personal Website
 </h1>
 
+## ✨ Features
+
+- Powerd by Gatsby
+- PWA
+- HTTP2
+- CI/CD
+
 ## 🚀 Quick start
 
 1.  **Start developing.**
